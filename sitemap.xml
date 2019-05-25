@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geliangjun.club/categories/index-1.html</loc>
+    
+    <lastmod>2019-05-25T10:01:00.080Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geliangjun.club/tags/index.html</loc>
+    
+    <lastmod>2019-05-25T09:57:09.760Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geliangjun.club/categories/index.html</loc>
+    
+    <lastmod>2019-05-25T09:56:36.461Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geliangjun.club/2019/05/25/hello-world/</loc>
     
     <lastmod>2019-05-25T09:32:58.845Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>https://geliangjun.club/about/index.html</loc>
     
     <lastmod>2019-05-25T05:58:43.709Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geliangjun.club/categories/index.html</loc>
-    
-    <lastmod>2019-05-25T05:36:20.226Z</lastmod>
     
   </url>
   
