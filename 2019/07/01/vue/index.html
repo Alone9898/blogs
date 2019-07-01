@@ -24,7 +24,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="All tags">
+        <meta property="og:title" content="vue自定义组件">
     
 
     <!--Open Graph Description-->
@@ -56,7 +56,7 @@
 
     <!-- Title -->
     
-    <title>All tags - 佩奇的博客</title>
+    <title>vue自定义组件 - 佩奇的博客</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -168,51 +168,74 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-    <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>All tags</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="post-preview">
-    <a href="/tags/技术/">
-        <h1 class="post-title archive">
-            技术
-        </h1>
-    </a>
-</div>
-                
-                    <div class="post-preview">
-    <a href="/tags/生活/">
-        <h1 class="post-title archive">
-            生活
-        </h1>
-    </a>
-</div>
-                
-                <div class="archive-before-pagination"></div>
+                <div class="post-heading">
+                    <h1>vue自定义组件</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by 葛亮均 on
+                        
+                        
+                            2019-07-01
+                        
+                    </span>
+                </div>
             </div>
         </div>
     </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
 
 
+<a href="/tags/技术/">#技术</a>
 
 
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">vue自定义公共组件</span><br><span class="line"></span><br><span class="line">我们在编写页面的时候,会存在公共的组件,比如头部和底部菜单</span><br><span class="line"></span><br><span class="line">我们拿公共头部为例子,想在每个页面都显示公共头部的实现方式有两种</span><br><span class="line"></span><br><span class="line">在src/components目录创建目录 common, 再创建header.vue</span><br><span class="line"></span><br><span class="line">header.vue的片段代码为</span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;header <span class="keyword">in</span> here&lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="built_in">export</span> default&#123;&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">(1)全局挂载组件</span><br><span class="line">在main.js里挂载,通过Vue.component方式</span><br><span class="line"></span><br><span class="line">import headerTop from <span class="string">"xxx/components/common/header"</span>   //引入组件</span><br><span class="line"></span><br><span class="line">Vue.component(<span class="string">"head-view"</span>,headerTop);</span><br><span class="line"> //第一个参数表示 head-view标签的内容都用第二个参数headerTop来代替</span><br><span class="line"></span><br><span class="line">然后在需要使用的vue文件中引入头部的话,只需要加入 &lt;head-view&gt;&lt;/head-view&gt;标签</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(2)局部引入,需要用的时候才引入使用</span><br><span class="line">在需要使用的VUE文件中引入头部:</span><br><span class="line">代码片段</span><br><span class="line">&lt;template&gt;</span><br><span class="line">&lt;headerTopNav&gt;&lt;/headerTopNav&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"> import headerTopNav from <span class="string">'xxx/components/common/header'</span>  //引入组件</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> default&#123;</span><br><span class="line">components: &#123;headerTopNav&#125; //表示headerTopNav标签的内容被headerTopNav组件代替</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">--------------------- </span><br><span class="line">作者：Hobart-Ljw </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/baidu_32809053/article/details/80417783 </span><br><span class="line">版权声明：本文为博主原创文章，转载请附上博文链接！</span><br></pre></td></tr></table></figure>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
 
     <!-- Footer -->
     <hr>
