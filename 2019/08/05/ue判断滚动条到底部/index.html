@@ -24,7 +24,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="佩奇的博客">
+        <meta property="og:title" content="vue判断滚动条到底部">
     
 
     <!--Open Graph Description-->
@@ -37,7 +37,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -56,7 +56,7 @@
 
     <!-- Title -->
     
-    <title>关于鸡汤 - 佩奇的博客</title>
+    <title>vue判断滚动条到底部 - 佩奇的博客</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -168,49 +168,61 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>关于鸡汤</h1>
+                <div class="post-heading">
+                    <h1>vue判断滚动条到底部</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by 葛亮均 on
+                        
+                        
+                            2019-08-05
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/05/25/hello-world/">
-        <h1 class="post-title archive">
-            新总统的第一天
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-05-25
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mounted ()&#123;</span><br><span class="line">      addEventListener(&apos;scroll&apos;, this.handleScroll)//监听函数</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">methods:&#123;</span><br><span class="line">  <span class="function"><span class="title">handleScroll</span></span>() &#123;</span><br><span class="line">    //变量scrollTop是滚动条滚动时，距离顶部的距离</span><br><span class="line">    <span class="built_in">let</span> scrollTop = document.documentElement.scrollTop||document.body.scrollTop;</span><br><span class="line">    //变量windowHeight是可视区的高度</span><br><span class="line">    <span class="built_in">let</span> windowHeight = document.documentElement.clientHeight || document.body.clientHeight;</span><br><span class="line">    //变量scrollHeight是滚动条的总高度</span><br><span class="line">    <span class="built_in">let</span> scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;</span><br><span class="line">     //滚动条到底部的条件</span><br><span class="line">     <span class="keyword">if</span>(scrollTop+windowHeight == scrollHeight)&#123;</span><br><span class="line">      //你想做的事情</span><br><span class="line">     &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+
+                
+            </div>
+
+            <!-- Comments -->
             
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr>
